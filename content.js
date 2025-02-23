@@ -141,7 +141,7 @@ sizeFilter.style.cssText = `
 
 // 宽度滑块容器
 let widthSliderContainer = document.createElement('div');
-widthSliderContainer.innerHTML = '<div style="font-size: 14px;">宽度范围: <span id="width-range-display">0 - 无限制</span></div>';
+widthSliderContainer.innerHTML = '<div style="font-size: 14px; color: #666;">宽度范围: <span id="width-range-display">0 - 无限制</span></div>';
 let widthSlider = document.createElement('div');
 widthSlider.style.cssText = `
   position: relative;
@@ -173,7 +173,7 @@ widthSliderContainer.appendChild(widthSlider);
 
 // 高度滑块容器
 let heightSliderContainer = document.createElement('div');
-heightSliderContainer.innerHTML = '<div style="font-size: 14px;">高度范围: <span id="height-range-display">0 - 无限制</span></div>';
+heightSliderContainer.innerHTML = '<div style="font-size: 14px; color: #666;">高度范围: <span id="height-range-display">0 - 无限制</span></div>';
 let heightSlider = document.createElement('div');
 heightSlider.style.cssText = widthSlider.style.cssText;
 
@@ -273,6 +273,7 @@ let typeLabel = document.createElement('span');
 typeLabel.textContent = '类型：';
 typeLabel.style.cssText = `
   font-size: 14px;
+  color: #666;
 `;
 
 filterContainer.appendChild(typeLabel);
