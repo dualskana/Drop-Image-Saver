@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Drop Image Saver",
+  "version": "1.0",
+  "description": "通过拖拽保存网页图片的Chrome插件",
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
